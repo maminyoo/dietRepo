@@ -1,6 +1,6 @@
 const express = require('express')
 const Device = require('../models/device')
-const router = new express.Router()
+const router = express.Router()
 
 router.post('/api/device', async (req, res) => {
   const device = new Device(req.query)
