@@ -7,7 +7,8 @@ const paymentSchema = new mongoose.Schema({
   fileNumber: String,
   main: String,
   curency: String,
-  trackingCode: String
+  trackingCode: String,
+  token: String
 }, { timestamps: true })
 
 module.exports = mongoose.model('Payment', paymentSchema)
