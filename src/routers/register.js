@@ -1,6 +1,6 @@
 const express = require('express')
 const Register = require('../models/register')
-const router = new express.Router()
+const router = express.Router()
 
 router.post('/api/register', async(req, res) => {
   const register = new Register(req.body)

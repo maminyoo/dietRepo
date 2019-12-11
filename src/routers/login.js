@@ -1,6 +1,6 @@
 const express = require('express')
 const Login = require('../models/login')
-const router = new express.Router()
+const router = express.Router()
 
 router.post('/api/login', async (req, res) => {
   const login = new Login(req.body)

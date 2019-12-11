@@ -1,6 +1,6 @@
 const express = require('express')
 const Payment = require('../models/payment')
-const router = new express.Router()
+const router = express.Router()
 
 router.post('/api/payment', async (req, res) =>{
   const payment = new Payment(req.body)
