@@ -1,15 +1,15 @@
 const mongoose = require('mongoose')
 
 const loginSchema = new mongoose.Schema({
-  period: Number,
-  fileNumber: String,
-  store: String,
   name: String,
   mobile: String,
-  birthday: String,
-  dietCount: Number,
-  dietDate: String,
+  fileNumber: String,
+  store: String,
   country: String,
+  birthday: String,
+  dietDate: String,
+  period: Number,
+  dietCount: Number,
   token: String,
   lanquage: String
 }, { timestamps: true })
