@@ -6,7 +6,7 @@ router.use('/api/device', async (req, res) => {
   const device = new Device(req.query)
   try {
     await device.save()
-    res.status(201).send(device)
+    res.status(201).send({status:'ok'})
   }catch (e){
     res.status(400).send(e)
   }

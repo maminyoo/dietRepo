@@ -6,7 +6,7 @@ router.post('/api/payment', async (req, res) =>{
   const payment = new Payment(req.body)
   try {
     await payment.save()
-    res.status(201).send(payment)
+    res.status(201).send({status:'ok'})
   }catch (e){
     res.status(400).send(e)
   }
