@@ -6,7 +6,7 @@ router.post('/api/register', async(req, res) => {
   const register = new Register(req.body)
   try{
     await register.save()
-    res.status(201).send({status: 'ok'})
+    res.status(201).send(register)
   }catch (e){
     res.status(400).send(e)
   }
