@@ -12,10 +12,13 @@
   "author": "Amin Sadeghian",
   "license": "ISC",
   "dependencies": {
+    "connect-redis": "^4.0.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-session": "^1.17.0",
     "mongodb": "^3.3.5",
-    "mongoose": "^5.7.13"
+    "mongoose": "^5.7.13",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "env-cmd": "^10.0.1",
