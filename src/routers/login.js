@@ -2,7 +2,7 @@ const express = require('express')
 const Login = require('../models/login')
 const router = express.Router()
 
-router.post('/api/login', async (req, res) => {
+router.post('/diet/api/login', async (req, res) => {
   const login = new Login(req.body)
   try{
     await login.save()

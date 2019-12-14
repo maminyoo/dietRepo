@@ -2,7 +2,7 @@ const express = require('express')
 const Register = require('../models/register')
 const router = express.Router()
 
-router.post('/api/register', async(req, res) => {
+router.post('/diet/api/register', async(req, res) => {
   const register = new Register(req.body)
   try{
     await register.save()

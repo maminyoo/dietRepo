@@ -2,7 +2,7 @@ const express = require('express')
 const Device = require('../models/device')
 const router = express.Router()
 
-router.use('/api/device', async (req, res) => {
+router.use('/diet/api/device', async (req, res) => {
   const device = new Device(req.query)
   try {
     await device.save()
