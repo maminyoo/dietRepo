@@ -14,5 +14,4 @@ app.use(register)
 app.use(login)
 app.use(payment)
 
-
 module.exports = app
