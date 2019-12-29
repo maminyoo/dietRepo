@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.use('/diet/api/device', async (req, res) => {
   const device = new Device(req.query)
-  try {
+  try{
     await device.save()
     res.status(201).send({status:'ok'})
   }catch (e){
